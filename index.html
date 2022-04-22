@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hello, World! - A-Frame</title>
+    <meta name="description" content="Hello, World! - A-Frame">
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+        <a-asset-item
+          id="planet1"
+          src="https://cdn.glitch.global/b66c01b7-f0df-458f-be83-f53b0f2fe904/planet-1.obj?v=1649195496744"
+        ></a-asset-item>
+        <a-asset-item
+          id="planet2"
+          src="https://cdn.glitch.global/b66c01b7-f0df-458f-be83-f53b0f2fe904/planet-2.obj?v=1649195496719"
+        ></a-asset-item>
+        <a-asset-item
+          id="planet3"
+          src="https://cdn.glitch.global/b66c01b7-f0df-458f-be83-f53b0f2fe904/planet-3.obj?v=1649195496788"
+        ></a-asset-item>
+        <a-asset-item
+          id="rship"
+          src="https://cdn.glitch.global/65779e82-3ad8-4efe-b3d2-a5ee73f5ea62/rocket.obj?v=1650406392343"
+        ></a-asset-item>
+        <!-- <a-asset-item
+          id="star"
+          src="https://cdn.glitch.global/65779e82-3ad8-4efe-b3d2-a5ee73f5ea62/star.obj?v=1649198090271"
+        ></a-asset-item> -->
+        <a-asset-item
+          id="satellite"
+          src="https://cdn.glitch.global/65779e82-3ad8-4efe-b3d2-a5ee73f5ea62/Satellite.obj?v=1650405279644"
+        ></a-asset-item>
+        <a-asset-item
+          id="UFO"
+          src="https://cdn.glitch.global/65779e82-3ad8-4efe-b3d2-a5ee73f5ea62/UFO.obj?v=1650406441164"
+        ></a-asset-item>
+
+        <a-asset-item
+          id="station"
+          src="https://cdn.glitch.me/65779e82-3ad8-4efe-b3d2-a5ee73f5ea62/station.obj?v=1650407070811"
+        ></a-asset-item>
+
+        <a-asset-item
+          id="astroid"
+          src="https://cdn.glitch.global/65779e82-3ad8-4efe-b3d2-a5ee73f5ea62/astroid.obj?v=1650405192551"
+        ></a-asset-item>
+        <img
+          id="boxTexture"
+          src="https://cdn.glitch.global/b66c01b7-f0df-458f-be83-f53b0f2fe904/dirt.jpg?v=1648593236185"
+        />
+      </a-assets>
+<!-- sun -->
+      <a-obj-model
+        src="#planet1"
+        position="0 0 -120"
+        scale=".40 .40 .40"
+      ></a-obj-model>
+<!-- asteroid -->
+      <a-obj-model
+        src="#astroid"
+        position=" 0 0 70"
+        scale="6 6 6"
+        material="shader:flat;src:https://cdn.glitch.global/65779e82-3ad8-4efe-b3d2-a5ee73f5ea62/Astroidtexture.jpg?v=1650406119792"
+      ></a-obj-model>
+<!-- ufo behind viewer -->
+      <a-obj-model
+        src="#UFO"
+        position="0 60 100"
+        scale="6 6 6"
+        material="shader:flat;src:https://cdn.glitch.global/65779e82-3ad8-4efe-b3d2-a5ee73f5ea62/ufo%20textrure.jpeg?v=1650406815802"
+      ></a-obj-model>
+
+      <a-obj-model
+        src="#station"
+        position="20 -5 0"
+        scale="3 3 3"
+         material="shader:flat;src:https://cdn.glitch.global/65779e82-3ad8-4efe-b3d2-a5ee73f5ea62/ufo%20textrure.jpeg?v=1650406815802"
+      ></a-obj-model>
+
+
+
+      <a-obj-model
+        src="#planet1"
+        position="50 30 -20"
+        scale=".45 .45 .45"
+        material= "shader:flat;src:https://cdn.glitch.global/65779e82-3ad8-4efe-b3d2-a5ee73f5ea62/texture-2.jpeg?v=1649197753009"
+      ></a-obj-model>
+      <a-obj-model
+        src="#planet2"
+        position="70 -10 -40"
+        scale=".2 .2 .2"
+        material="shader:flat;src:https://aframe.io/sample-assets/assets/images/noise/disturb.jpg"
+      ></a-obj-model>
+      <a-obj-model
+        src="#planet3"
+        position="-45 40 -35"
+        scale=".3 .3 .3"
+        material="shader:flat;src:https://cdn.glitch.global/65779e82-3ad8-4efe-b3d2-a5ee73f5ea62/texture-1.jpeg?v=1649197753659"
+      ></a-obj-model>
+      <a-obj-model
+        src="#planet3"
+        position="-50 -10 -70"
+        scale=".2 .2 .2"
+        material="shader:flat;src:https://cdn.glitch.global/65779e82-3ad8-4efe-b3d2-a5ee73f5ea62/texture-5.jpeg?v=1650406524968"
+      ></a-obj-model>
+      <a-obj-model
+        src="#planet3"
+        position="50 -10 25"
+        scale=".27 .27 .27"
+        material="shader:flat;src:https://aframe.io/sample-assets/assets/images/noise/disturb.jpg"
+      ></a-obj-model>
+      <a-obj-model
+        src="#planet3"
+        position="-60 -15 -20"
+        scale=".27 .27 .27"
+        material="shader:flat;src:https://aframe.io/sample-assets/assets/images/noise/disturb.jpg"
+      ></a-obj-model>
+      <!-- <a-obj-model
+        src="star"
+        position="0 2 -30"
+        scale=".98 .98 .98"
+      ></a-obj-model> -->
+<!-- rocketship for interaction -->
+      <a-obj-model
+        src="#rship"
+        position="-2 4 -5"
+        rotation="-45 45 30"
+        scale="4.3 4.3 4.3"
+        material="shader:flat;src:https://cdn.glitch.global/65779e82-3ad8-4efe-b3d2-a5ee73f5ea62/ufo%20textrure.jpeg?v=1650406815802"
+      ></a-obj-model>
+<!-- satellite above head -->
+      <a-obj-model
+        src="#satellite"
+        position="-20 35 15"
+        scale="4 4 4"
+        material="shader:flat;src:https://aframe.io/sample-assets/assets/images/noise/disturb.jpg"
+      ></a-obj-model>
+<!-- neptune like planet -->
+      <a-obj-model
+        src="#planet3"
+        position="-44 20 45"
+        scale=".27 .27 .27"
+        material="shader:flat;src:https://cdn.glitch.global/65779e82-3ad8-4efe-b3d2-a5ee73f5ea62/texture-7.jpeg?v=1650406858686"
+      ></a-obj-model>
+<!-- star texture planet -->
+      <a-obj-model
+        src="#planet3"
+        position="-70 5 12"
+        scale=".16 .16 .16"
+        material="shader:flat;src:https://cdn.glitch.global/65779e82-3ad8-4efe-b3d2-a5ee73f5ea62/texture-8.jpeg?v=1650407227414"
+      ></a-obj-model>
+      <!-- <a-collada-model src="mcblock"></a-collada-model> -->
+      <a-sky
+        src="https://cdn.glitch.global/65779e82-3ad8-4efe-b3d2-a5ee73f5ea62/space.jpg?v=1649196524071"
+      ></a-sky>
+      <a-light type="ambient" color="#445430"></a-light>
+      <a-light light="color: #ff6000; intensity: 2; type: point"></a-light>
+      <a-text value="Welcome to space ... take a look around!" color="white" position="-1.9 3.7 -5"></a-text>
+      <a-text value="1. Click and drag to adjust the screen" color="white" position="-1.7 3.3 -5"></a-text>
+      <a-text value="2. Use the arrows or WASD keys to wander around." color="white" position="-2.2 1.5 -5"></a-text>
+      <a-text value="3. Have fun!" color="white" position="-0.5 1.1 -5"></a-text>
+    </a-scene>
+  </body>
+</html>
